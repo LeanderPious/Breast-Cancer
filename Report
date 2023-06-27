@@ -1,0 +1,23 @@
+I download dataset from kaggle (Breast Cancer)
+
+Project Report: Breast Cancer Classification using Support Vector Machines (SVM)
+
+Introduction:
+The aim of this project is to develop a breast cancer classification model using Support Vector Machines (SVM) algorithm. The dataset used for this project is the "breast-cancer.csv" file, which contains various features related to breast cancer tumors along with their corresponding diagnosis (M = malignant, B = benign). The project involves several steps, including data loading, preprocessing, model training, and evaluation.
+
+Dataset Exploration:
+The dataset is loaded using the pandas library, and the first few rows are displayed using the head() function. This helps us gain an initial understanding of the dataset structure and the available features.
+
+Data Preprocessing:
+In this step, the dataset is prepared for training the SVM model. The features are divided into input variables (X) and the target variable (y). The target variable is the "diagnosis" column, and it is dropped from the input variables. The dataset is split into training and testing sets using the train_test_split() function from scikit-learn. The input features are standardized using the StandardScaler() to ensure all features have the same scale.
+
+Model Training and Evaluation:
+An SVM model with a linear kernel is initialized using the svm.SVC() class from scikit-learn. The model is trained on the standardized training data using the fit() function. The trained model is then used to predict the target variable for the testing data using the predict() function. The accuracy of the model is calculated by comparing the predicted labels with the actual labels using the accuracy_score() function. Additionally, a confusion matrix is generated using the confusion_matrix() function to evaluate the performance of the model.
+
+Results:
+The accuracy of the SVM model on the testing data is printed using the print() function. The accuracy score indicates the proportion of correctly classified samples. The confusion matrix is also displayed, which provides information about the number of true positive, true negative, false positive, and false negative predictions made by the model.
+
+Conclusion:
+In this project, a breast cancer classification model was developed using SVM. The model achieved a certain level of accuracy on the testing data, which indicates its effectiveness in predicting the diagnosis of breast cancer tumors. Further analysis and optimization can be performed to improve the model's performance, such as trying different kernels or tuning hyperparameters.
+
+Note: The project report provides an overview of the code and its execution steps. It is important to include more detailed information, such as the dataset description, explanation of SVM and its parameters, and interpretation of the results, when creating a comprehensive report.
